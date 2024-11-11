@@ -23,6 +23,8 @@ Bu veri tabanı modeli; otel, odalar, müşteriler, rezervasyonlar, hizmetler, p
 
 #### 1. Customer
 - **Customer_id** (Primary Key): Müşterinin kimlik numarası.
+- **Age**: Müşterinin yaşı.
+- **Gender**: Müşterinin cinsiyeti.
 - **Name**: Müşterinin adı.
 - **Phone**: Müşterinin telefon numarası.
 - **Email**: Müşterinin e-posta adresi.
