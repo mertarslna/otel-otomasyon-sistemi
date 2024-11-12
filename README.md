@@ -39,8 +39,7 @@ Bu veri tabanı modeli; otel, odalar, müşteriler, rezervasyonlar, hizmetler, p
 #### 3. Hotel
 - **Hotel_id** (Primary Key): Otelin kimlik numarası.
 - **Hotel_Name**: Otelin ismi.
-- **Location**: Otelin adresi.
-- **Score**: Otel puanlaması.
+- **Location**: Otelin konumu.
   
 #### 4. Bill 
 - **Bill_id** (Primary Key): Fatura kimlik numarası.
@@ -49,19 +48,17 @@ Bu veri tabanı modeli; otel, odalar, müşteriler, rezervasyonlar, hizmetler, p
 - **Amount**: Faturanin bedel miktarı.
   
 #### 5. Reservation
-- **Reservation_id** (Primary Key): Reservasyon numarası.
+- **Reservation_id** (Primary Key): Reservasyon kimlik numarası.
 - **Customer_id** (Foreign Key): Rezervasyonu yapan müşteri kimliği.
 - **Room_Number** (Foreign Key): Rezervasyon yapılan oda numarası.
 - **Start_Date**: Rezervasyon başlangıç tarihi.
 - **End_Date**: Rezervasyon bitiş tarihi.
 
-#### 6. Review
-- **Review_id** (Primary Key): Değerlendirme kimlik numarası.
-- **Customer_id** (Foreign Key): Yorumu yapan müşteri kimlik numarası.
-- **Hotel_id** (Foreign Key): Yorum yapılan otel.
-- **Rating**: Otel puanı (örneğin, 1-5 arası).
-- **Comments**: Müşterinin yorumları.
-- **Comment_Date**: Yorum tarihi.
+#### 6. Admin
+- **Admin_id** = Yönetici kimlik numarası.
+- **Admin_name** = Yönetici ismi.
+- **Username** = Yönetici kullanıcı adı.
+- **Password** = Yönetici şifresi.
 
 ### Relations
 1. **Customer - Reservation** : Her rezervasyon tek bir müşteriye aittir (**N-1**).
